@@ -1,0 +1,185 @@
+@font-face {
+    font-family: 'DTNightingale'; 
+    src: url(DTNightingale-Light.woff2) format(woff2); 
+}
+@font-face {
+    font-family: 'TAN Nimbus';
+    src: url(TAN-NIMBUS.woff2) format(woff2);
+}
+
+body {
+    font-family: 'DTNightingale', sans-serif; 
+    background-color: #efb9c1;
+    color: #446250;
+}
+
+#logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+#logo-link {
+    display: flex; 
+    align-items: center; 
+    text-decoration: none; 
+    color: inherit; 
+    gap: 10px;
+}
+
+#logo {
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%;
+}
+
+#logo-link:hover {
+    opacity: 0.8;
+}
+
+#brand-name {
+    font-size: 25px;
+    font-weight: bold;
+    color: #446250;
+    text-transform: uppercase;
+}
+
+.brand-part1 {
+    color: #bd4d83; 
+    font-weight: bold;
+    font-family: 'TAN Nimbus', sans-serif;
+    text-transform: lowercase;
+}
+
+.brand-part2 {
+    color: #446250; 
+    font-weight: bold;
+    font-family: 'TAN Nimbus', sans-serif;
+    text-transform: lowercase;
+}
+
+#navbar {
+    background-color:#ffe7e7;              
+    text-align: center;       
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 20px;   
+}
+
+#navbar ul {
+    list-style: none;            
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+    display: flex;               
+    justify-content: right;     
+}
+
+#navbar li {
+    margin: 0 -40px; 
+    margin-top: 5px;
+    margin-right: 130px;             
+}
+
+#navbar a {
+    color: #446250;                
+    text-decoration: none;       
+    font-size: 18px;             
+    text-transform: uppercase;   
+    font-weight: bold;           
+}
+
+#search {
+    width: 30px; 
+    height: 30px;
+    margin-left: 10px; 
+    vertical-align: middle; 
+}
+
+#navbar a:hover + #search {
+    color: #ffe7e7;   
+    opacity: 0.7      
+}
+
+#header {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 50px;
+    margin-top: 150px;
+    margin-bottom: 0px;
+}
+
+#icon {
+    margin-bottom: -100px;
+    
+}
+
+#rec1 {
+    width: 250px;
+    height: 50px;
+    margin: 30px auto; 
+    margin-top: 50px; 
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    color: #446250;
+}
+
+#apparel {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 30px;  
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.rec2 {
+    background-color: #ffffff;
+    width: 500px;
+    height:500px;
+    margin-top: 30px;
+    color:#446250;
+    padding: 20px;         
+    border-radius: 10px;       
+    font-weight: bolder;         
+    text-transform: uppercase;  
+    font-size: 40px;             
+    text-align: center;          
+    display: flex;  
+    flex-direction: column;             
+    align-items: center;         
+    justify-content: start;     
+    cursor: pointer;
+    box-sizing: border-box;
+    gap: 20px;
+}
+
+.icon {
+    width: 80px; 
+    height: auto;
+    margin-bottom: 20px;
+    margin-top: 30px;
+
+}
+
+.title {
+    margin: 5px 0;
+    font-size: 40px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.description {
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: none;
+    color: #446250;
+}
+
+.rec2 p {
+    margin: 5px 0; 
+}

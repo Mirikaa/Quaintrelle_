@@ -1,0 +1,126 @@
+@font-face {
+    font-family: 'DTNightingale'; 
+    src: url(DTNightingale-Light.woff2) format(woff2); 
+}
+
+@font-face {
+    font-family: 'TAN Nimbus';
+    src: url(TAN-NIMBUS.woff2) format(woff2);
+}
+
+body {
+    font-family: 'DTNightingale', sans-serif; 
+    color: #446250;
+    background-image: url(Bg.png);
+}
+
+#logo-container {
+        display: flex;
+        align-items: center;
+        gap: 10px; 
+    }
+    
+#logo-link {
+        display: flex; 
+        align-items: center; 
+        text-decoration: none; 
+        color: inherit; 
+        gap: 10px;
+    }
+    
+#logo {
+        width: 50px; 
+        height: 50px; 
+        border-radius: 50%;
+    }
+    
+#logo-link:hover {
+        opacity: 0.8;
+    }
+    
+#brand-name {
+        font-size: 25px;
+        font-weight: bold;
+        color: white;
+        text-transform: uppercase;
+    }
+    
+.brand-part1 {
+        color: #ffd9d9; 
+        font-weight: bold;
+        font-family: 'TAN Nimbus', sans-serif;
+        text-transform: lowercase;
+    }
+    
+.brand-part2 {
+        color: #a4c2b0; 
+        font-weight: bold;
+        font-family: 'TAN Nimbus', sans-serif;
+        text-transform: lowercase;
+    }
+    
+#navbar {
+        background-color: #cf5992;              
+        text-align: center;       
+        display: flex;
+        justify-content: space-between; 
+        align-items: center; 
+        padding: 10px 20px;   
+    }
+    
+#navbar ul {
+        list-style: none;            
+        padding: 0;
+        margin: 0;
+        gap: 20px;
+        display: flex;               
+        justify-content: right;     
+    }
+    
+#navbar li {
+        margin: 0 -40px; 
+        margin-top: 5px;
+        margin-right: 130px;             
+    }
+    
+#navbar a {
+        color: white;                
+        text-decoration: none;       
+        font-size: 18px;             
+        text-transform: uppercase;   
+        font-weight: bold;           
+    }
+    
+#search {
+        width: 30px; 
+        height: 30px;
+        margin-left: 10px; 
+        vertical-align: middle; 
+    }
+    
+#navbar a:hover + #search {
+        color: #ffe7e7;   
+        opacity: 0.7      
+    }     
+
+#header {
+    text-transform: uppercase;
+    margin-left: 1050px;
+    margin-top: 100px;
+    font-size: 50px;
+}
+
+#dc1 {
+    font-size: 30px;
+    margin-left: 1050px;
+    margin-top: -40px;
+    line-height: 25px;
+
+}
+
+#dc2 {
+    font-size: 30px;
+    margin-left: 1050px;
+    margin-top: 50px;
+    line-height: 25px;
+}

@@ -1,0 +1,250 @@
+@font-face {
+    font-family: 'DTNightingale'; 
+    src: url(DTNightingale-Light.woff2) format(woff2); 
+}
+
+@font-face {
+    font-family: 'TAN Nimbus';
+    src: url(TAN-NIMBUS.woff2) format(woff2);
+}
+
+body {
+    font-family: 'DTNightingale', sans-serif; 
+    background-color: #ffe7e7;
+    color: #446250;
+}
+
+#logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+#logo-link {
+    display: flex; 
+    align-items: center; 
+    text-decoration: none; 
+    color: inherit; 
+    gap: 10px;
+}
+
+#logo {
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%;
+}
+
+#logo-link:hover {
+    opacity: 0.8;
+}
+
+#brand-name {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+
+.brand-part1 {
+    color: #ffd9d9; 
+    font-weight: bold;
+    font-family: 'TAN Nimbus', sans-serif;
+    text-transform: lowercase;
+}
+
+.brand-part2 {
+    color: #a4c2b0; 
+    font-weight: bold;
+    font-family: 'TAN Nimbus', sans-serif;
+    text-transform: lowercase;
+}
+
+#navbar {
+    background-color: #cf5992;              
+    text-align: center;       
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 20px;   
+}
+
+#navbar ul {
+    list-style: none;            
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+    display: flex;               
+    justify-content: right;     
+}
+
+#navbar li {
+    margin: 0 -40px; 
+    margin-top: 5px;
+    margin-right: 130px;             
+}
+
+#navbar a {
+    color: white;                
+    text-decoration: none;       
+    font-size: 18px;             
+    text-transform: uppercase;   
+    font-weight: bold;           
+}
+
+#search {
+    width: 30px; 
+    height: 30px;
+    margin-left: 10px; 
+    vertical-align: middle; 
+}
+
+#navbar a:hover + #search {
+    color: #ffe7e7;   
+    opacity: 0.7           
+}
+#header {
+    text-align: center;  
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-top: 550px;
+    margin-bottom: 0px;
+}
+
+#dc1 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: -30px;
+}
+
+#dc2 {
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: -10px;
+    line-height: 15px;
+}
+
+#rec1 {
+    width: 250px;          
+    height: 50px;         
+    background-color: #e8a4bb; 
+    margin: 30px auto; 
+    margin-top: 50px; 
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#rec1 a {
+    color: #bd4d83;
+    font-weight: bolder;
+    font-size: 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+#dc3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bolder;
+    margin-top: 200px ;
+    margin-bottom: -50px;
+}
+
+#dc4 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 58px;
+    font-weight: bold;
+
+}
+
+#apparel-pic { 
+    display: flex;
+    justify-content: center;
+    gap: 140px;
+    margin-top: 30px;
+    margin-bottom: -250px;  
+}
+
+.app-pic {
+    border-radius: 10px;
+}
+
+#apparel {
+    display: flex;
+    justify-content: center;
+    gap: 300px;
+    margin-top: 0px; 
+    margin-bottom: 100px; 
+}
+
+.rec2 {
+    background-color: #e8a4bb;
+    width: 150px;
+    height: 50px;
+    margin-top: 300px;
+    color: #bd4d83;
+    padding: 10px 20px;         
+    border-radius: 10px;       
+    font-weight: bolder;         
+    text-transform: uppercase;  
+    font-size: 18px;             
+    text-align: center;          
+    display: flex;               
+    align-items: center;         
+    justify-content: center;     
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+#carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 10500px; 
+    margin-bottom: -250px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.slides {
+    position: relative;
+}
+
+.slides img {
+    display: none;
+    width: 100%;
+    height: auto;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slides img.active {
+    display: block;
+}
+
+.indicators {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.indicator {
+    width: 12px;
+    height: 12px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.indicator.active {
+    background-color: white; 
+}
